@@ -39,19 +39,18 @@ Figure 6.  Delayed departure time during the months between 2009 and 2018.
 
 Figure 7.  Delayed and on-time flight departure distribution for airline companies between 2009 and 2018.
 
-![](image/airline.png)
+
 
 
 Figure 8.  Delayed departure time for airline companies between 2009 and 2018.
 
-![](image/boxplotAirline.png)
+
 
 
 Figure 9.  Delayed and on-time flight departure distribution in US States/Districts/Territories between 2009 and 2018.
 
-![](image/states.png)
+
 
 
 Figure 10.  Delayed departure time in US States/Districts/Territories between 2009 and 2018.
 
-![](image/boxplotStates.png)

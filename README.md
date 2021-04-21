@@ -61,3 +61,9 @@ Figure 9.  Delayed and on-time flight departure distribution in US States/Distri
 Figure 10.  Delayed departure time in US States/Districts/Territories between 2009 and 2018.
 
 ![](image/boxplotStates.png)
+
+
+Figure 11.  Correlation matrix of delayed flight departure information.
+
+![](image/correlation_matrix.png)
+

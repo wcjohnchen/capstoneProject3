@@ -1,5 +1,9 @@
 ## Time Series Forecasting for Airline Flight Departure Delays Using Neural Networks
 
+
+![](image/airport.png)
+
+
 The goal of this study is to predict particularly the length of time of future flight departure delays using standard recurrent neural network (RNN), long short-term memory (LSTM), and/or 1D-CNN-LSTM models.  The data was published by the Bureau of Transportation Statistics of the US Department of Transporation, and is available at: https://www.kaggle.com/yuanyuwendymu/airline-delay-and-cancellation-data-2009-2018.
 
 ## Exploratory Data Analysis

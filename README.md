@@ -75,9 +75,14 @@ Figure 12.  Time series plot of delayed departure for Southwest Airlines.
 ![](image/time_series_sw.png)
 
 
-Figure 12.  Time series plot of delayed departure for United Airlines.
+Figure 13.  Time series plot of delayed departure for United Airlines.
 
 ![](image/time_series_ua.png)
+
+
+Figure 14.  Time series plot of delayed departure for Alaska Airlines.
+
+![](image/time_series_alaska.png)
 
 
 ## LSTM Model

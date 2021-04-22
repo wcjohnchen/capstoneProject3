@@ -67,3 +67,14 @@ Figure 11.  Correlation matrix of delayed flight departure information.
 
 ![](image/correlation_matrix.png)
 
+
+## Time Series
+
+Figure 12.  Time series plot of delayed departure for Southwest Airlines.
+
+![](image/time_series_sw.png)
+
+
+Figure 12.  Time series plot of delayed departure for United Airlines.
+
+![](image/time_series_ua.png)

@@ -70,7 +70,7 @@ Figure 11.  Correlation matrix of delayed flight departure information.
 
 ## Time Series
 
-Figure 12.  Time series plot of delayed departure for Southwest, United, and Alaska airlines.
+Figure 12.  Time series plot of delayed departure for Southwest, United, and Alaska Airlines.
 
 ![](image/time_series_sw.png)
 

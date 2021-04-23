@@ -10,7 +10,7 @@ The goal of this study is to predict particularly the length of time of future f
 
 ## Exploratory Data Analysis
 
-The dataset contains flight information from 2009 to 2018.
+The dataset contains flight information from 2009 to 2018..
 
 
 Figure 1.  Delayed and on-time flight departure distribution from 2009 to 2018.

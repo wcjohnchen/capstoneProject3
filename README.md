@@ -1,4 +1,4 @@
-## Time Series Forecasting for Airline Flight Departure Delays Using Neural Networks
+## Time Series Forecasting for Airline Flight Departure Delays Using Long Short Term Memory (LSTM) Neural Networks
 
 
 ![](image/airport.png)

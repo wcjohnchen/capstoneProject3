@@ -13,64 +13,74 @@ The goal of this study is to predict particularly the length of time of future f
 The dataset contains flight information from 2009 to 2018.
 
 
-Figure 1.  Delayed and on-time flight departure distribution from 2009 to 2018.
+Figure 1.  Flight departure from 2009 to 2018.  (A) Delayed and on-time departure. (B) Delayed Departure and arrival.
+
+A)
 
 ![](image/flightDeparture2009_2018.png)
 
-
-Figure 2.  Delayed flight departure and arrival from 2009 to 2018.
+B)
 
 ![](image/delayedDeparture2009_2018.png)
 
 
-Figure 3.  Type of delays and corresponding delayed departure time.
+
+Figure.  Delayed departure time.  (A) Type of delays.  (B) Time of a day.
+
+A)
 
 ![](image/boxplotDelay.png)
 
-
-Figure 4.  Time of a day and corresponding delayed departure time.
+B)
 
 ![](image/boxplotTime.png)
 
 
-Figure 5.  Delayed and on-time flight departure distribution during the months between 2009 and 2018.
+
+Figure.  Flight departure during the months between 2009 and 2018.  (A) Delayed and on-time departure.  (B) Delayed departure time.
+
+A)
 
 ![](image/months.png)
 
-
-Figure 6.  Delayed departure time during the months between 2009 and 2018.
+B)
 
 ![](image/boxplotMonths.png)
 
 
-Figure 7.  Delayed and on-time flight departure distribution for airline companies between 2009 and 2018.
+
+Figure.  Flight departure for airline companies between 2009 and 2018.  (A) Delayed and on-time departure.  (B) Delayed departure time.
+
+A)
 
 ![](image/airline.png)
 
-
-Figure 8.  Delayed departure time for airline companies between 2009 and 2018.
+B)
 
 ![](image/boxplotAirline.png)
 
 
-Figure 9.  Delayed and on-time flight departure distribution in US States/Districts/Territories between 2009 and 2018.
+
+Figure.  Flight departure in US States/Districts/Territories between 2009 and 2018.  (A) Delayed and on-time departure.  (B) Delayed departure time.
+
+A)
 
 ![](image/states.png)
 
-
-Figure 10.  Delayed departure time in US States/Districts/Territories between 2009 and 2018.
+B)
 
 ![](image/boxplotStates.png)
 
 
-Figure 11.  Correlation matrix of delayed flight departure information.
+
+Figure.  Correlation matrix of delayed flight departure information.
 
 ![](image/correlation_matrix.png)
 
 
 ## Time Series
 
-Figure 12.  Time series plot of delayed departure for Southwest, United, and Alaska Airlines.
+Figure.  Time series plot of delayed departure for Southwest, United, and Alaska Airlines.
 
 ![](image/time_series_sw.png)
 

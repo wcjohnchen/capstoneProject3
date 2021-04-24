@@ -6,14 +6,14 @@
 
 ## Aim
 
-The goal of this study is to predict particularly the length of time of future flight departure delays using standard recurrent neural network (RNN), long short-term memory (LSTM), and/or 1D-CNN-LSTM models.  The data was published by the Bureau of Transportation Statistics of the US Department of Transporation, and is available at: https://www.kaggle.com/yuanyuwendymu/airline-delay-and-cancellation-data-2009-2018.
+The goal of this study is to predict particularly the length of time of future flight departure delays using long short-term memory (LSTM) neural netork models.  The data was published by the Bureau of Transportation Statistics of the US Department of Transporation, and is available at: https://www.kaggle.com/yuanyuwendymu/airline-delay-and-cancellation-data-2009-2018.
 
 ## Exploratory Data Analysis
 
 The dataset contains flight information from 2009 to 2018.
 
 
-Figure 1.  Flight departure from 2009 to 2018.  (A) Delayed and on-time departure. (B) Delayed Departure and arrival.
+Figure 1.  Flight departure from 2009 to 2018.  (A) Delayed and on-time departure. (B) Delayed departure and arrival.
 
 A)
 

@@ -49,13 +49,17 @@ B)
 
 
 
-Figure.  Flight departure for airline companies between 2009 and 2018.  (A) Delayed and on-time departure.  (B) Delayed departure time.
+Figure.  Flight departure for airline companies between 2009 and 2018.  (A) Total number of flights for each airline.  (B) Delayed and on-time departure.  (C) Delayed departure time.
 
 A)
 
-![](image/airline.png)
+![](image/airline_counts.png)
 
 B)
+
+![](image/airline.png)
+
+C)
 
 ![](image/boxplotAirline.png)
 

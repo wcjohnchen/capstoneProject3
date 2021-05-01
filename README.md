@@ -126,7 +126,7 @@ Figure 7.  A representative schematic of LSTM architecture.
 
 ## Time Series
 
-Figure 8.  Time series plot of averaged monthly delayed departure time for all airlines.  (A) Representative test prediction (crimson).  (B) Future prediction (light crimson).  n = 3, standard deviation with 95% confidence interval.
+Figure 8.  Time series plot of averaged monthly delayed departure time for all airlines.  (A) A Representative test prediction (crimson).  (B) Future prediction (light crimson).  n = 3, standard deviation with 95% confidence interval.
 
 A)
 ![](image/predict_test_all_flights.png)
@@ -135,7 +135,7 @@ B)
 ![](image/predict_future_spread_all_flights.png)
 
 
-Figure 9.  Time series plot of averaged monthly delayed departure time for Southwest Airlines.  (A) Representative test prediction (crimson).  (B) Future prediction (light crimson).  n = 3, standard deviation with 95% confidence interval.
+Figure 9.  Time series plot of averaged monthly delayed departure time for Southwest Airlines.  (A) A Representative test prediction (crimson).  (B) Future prediction (light crimson).  n = 3, standard deviation with 95% confidence interval.
 
 A)
 ![](image/predict_test_sw.png)
@@ -144,7 +144,7 @@ B)
 ![](image/predict_future_spread_sw.png)
 
 
-Figure 10.  Time series plot of averaged monthly delayed departure time for Alaska Airlines.  (A) Representative test prediction (crimson).  (B) Future prediction (light crimson).  n = 3, standard deviation with 95% confidence interval.
+Figure 10.  Time series plot of averaged monthly delayed departure time for Alaska Airlines.  (A) A Representative test prediction (crimson).  (B) Future prediction (light crimson).  n = 3, standard deviation with 95% confidence interval.
 
 A)
 ![](image/predict_test_alaska.png)

@@ -148,9 +148,13 @@ B)
 ![](image/predict_future_spread_alaska.png)
 
 
+Table 2.  Time series test prediction result (n = 3).
+
+![](image/result_table.jpg)
+
 
 ## Next Steps
-
+LSTM nerual network models were built and used to perdict flight departure time delay in this study.  The univariate models consist of multiple bidirectional LSTM layers and has an overall performance of MAPE ranging from 10.0 ± 0.1% to 11.5 ± 0.8% on predictions.  Future directions may consider multivariate LSTM models and develop a web application for the flight departure information using FLASK.
 
 
 ## Technologies

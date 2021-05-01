@@ -6,7 +6,26 @@
 
 ## Aim
 
-The goal of this study is to predict particularly the length of time of future flight departure delays using long short-term memory (LSTM) neural network models.  The data was published by the Bureau of Transportation Statistics of the US Department of Transporation, and is available at: https://www.kaggle.com/yuanyuwendymu/airline-delay-and-cancellation-data-2009-2018.
+Air Traveling has been increasingly integrated into our daily life.  Like driving, it is essential to plan ahead and anticipate immient delays.  To achieve this, this study aims to is to predict future flight departure time delays using long short-term memory (LSTM) neural network models.  The data was published by the Bureau of Transportation Statistics of the US Department of Transporation, and is available at: https://www.kaggle.com/yuanyuwendymu/airline-delay-and-cancellation-data-2009-2018.
+
+
+## Methods
+
+1. Exploratory Data Analysis
+
+    I. Extract data and identify features.
+
+    II. Clean and manipulate data
+
+    III. Plot distribution and determine correlations
+    
+
+2. Modeling
+
+    Recurrent neural network.  LSTM models were implemnted using Tensorflow-Keras.  The representative summary of the neural network was shown on Table 1.  Models have different number of bidirectional layers and LSTM units.
+
+3. Time Series
+    The monthly dataset was split into train and test sets, 80:20.  Use of previous 66 months to predict future 24 months.  Lag time = 1.
 
 ## Exploratory Data Analysis
 
@@ -86,17 +105,55 @@ Figure.  Correlation matrix of delayed flight departure information.
 ![](image/correlation_matrix.png)
 
 
+## LSTM Model
+
+Table.  A representative LSTM Model Summary.
+
+![](image/LSTM_model_summary.jpg)
+
+Figure.  A representative schematic of LSTM architecture.
+
+
+![](image/schematic_LSTM_architecture.jpg)
+
+
 ## Time Series
 
-Figure.  Time series plot of delayed departure for Southwest, United, and Alaska Airlines.
+Figure.  Time series plot of averaged monthly delayed departure time for all airlines.  (A) Representative test prediction (crimson).  (B) Future prediction (light crimson).  n = 3, standard deviation with 95% confidence interval.
+
+A)
+![](image/predict_test_all_flights.png)
+
+B)
+![](image/predict_future_spread_all_flights.png)
+
+
+Figure.  Time series plot of averaged monthly delayed departure time for Southwest Airlines.  (A) Representative test prediction (crimson).  (B) Future prediction (light crimson).  n = 3, standard deviation with 95% confidence interval.
+
+
+
+Figure.  Time series plot of averaged monthly delayed departure time for Alaska Airlines.  (A) Representative test prediction (crimson).  (B) Future prediction (light crimson).  n = 3, standard deviation with 95% confidence interval.
+
+
+
+![](image/time_series_all_flights.png)
+
+
+B)
 
 ![](image/time_series_sw.png)
 
 
-![](image/time_series_ua.png)
-
+C)
 
 ![](image/time_series_alaska.png)
 
 
-## LSTM Model
+## Next Steps
+
+
+
+## Technologies
+
+![](image/technologies.jpg)
+

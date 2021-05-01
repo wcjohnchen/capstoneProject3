@@ -24,7 +24,7 @@ Air Traveling has been increasingly integrated into our daily life.  Like drivin
 
 2. Modeling
 
-    Recurrent neural network.  LSTM models were implmented using Tensorflow-Keras.  The representative summary of the neural network was shown on Table 1.  Models have different number of bidirectional layers and LSTM units.  Different optimizer learning rate and epochs were used to achieve best mean squared error (MSE) and mean absolute percentage error (MAPE).
+    Recurrent neural network.  LSTM models were implmented using Tensorflow-Keras.  The representative summary of the neural network was shown on Table 1.  Models have different number of bidirectional layers and LSTM units.  Different optimizer learning rate and epochs were adjusted.
 
 3. Time Series
 
@@ -135,7 +135,7 @@ B)
 ![](image/predict_future_spread_all_flights.png)
 
 
-Figure 9.  Time series plot of averaged monthly delayed departure time for Southwest Airlines.  (A) A Representative test prediction (crimson).  (B) Future prediction (light crimson).  n = 3, standard deviation with 95% confidence interval.
+Figure 9.  Time series plot of averaged monthly delayed departure time for Southwest Airlines.  (A) A Representative test prediction (crimson).  (B) Future prediction (light crimson).  n = 3.
 
 A)
 ![](image/predict_test_sw.png)
@@ -144,7 +144,7 @@ B)
 ![](image/predict_future_spread_sw.png)
 
 
-Figure 10.  Time series plot of averaged monthly delayed departure time for Alaska Airlines.  (A) A Representative test prediction (crimson).  (B) Future prediction (light crimson).  n = 3, standard deviation with 95% confidence interval.
+Figure 10.  Time series plot of averaged monthly delayed departure time for Alaska Airlines.  (A) A Representative test prediction (crimson).  (B) Future prediction (light crimson).  n = 3.
 
 A)
 ![](image/predict_test_alaska.png)

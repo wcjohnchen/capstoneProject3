@@ -22,10 +22,10 @@ Air Traveling has been increasingly integrated into our daily life.  Like drivin
 
 2. Modeling
 
-    Recurrent neural network.  LSTM models were implemnted using Tensorflow-Keras.  The representative summary of the neural network was shown on Table 1.  Models have different number of bidirectional layers and LSTM units.
+    Recurrent neural network.  LSTM models were implemnted using Tensorflow-Keras.  The representative summary of the neural network was shown on Table 1.  Models have different number of bidirectional layers and LSTM units.  Different optimizer learning rate and epochs were used to achieve best mean squared error (MSE) and mean absolute percentage error (MAPE).
 
 3. Time Series
-    The monthly dataset was split into train and test sets, 80:20.  Use of previous 66 months to predict future 24 months.  Lag time = 1.
+    The monthly dataset was split into train and test sets, 80:20.  A sliding window of previous 66 months were used to predict future 24 months.  Lag time = 1.
 
 ## Exploratory Data Analysis
 
@@ -42,9 +42,9 @@ B)
 
 ![](image/delayedDeparture2009_2018.png)
 
-C)
+C, D)
 
-![](image/average_delayed_time.png)
+![](image/time_delay.png)
 
 
 

@@ -105,6 +105,7 @@ Figure.  Correlation matrix of delayed flight departure information.
 ![](image/correlation_matrix.png)
 
 
+
 ## LSTM Model
 
 Table.  A representative LSTM Model Summary.
@@ -115,6 +116,7 @@ Figure.  A representative schematic of LSTM architecture.
 
 
 ![](image/schematic_LSTM_architecture.jpg)
+
 
 
 ## Time Series
@@ -130,23 +132,21 @@ B)
 
 Figure.  Time series plot of averaged monthly delayed departure time for Southwest Airlines.  (A) Representative test prediction (crimson).  (B) Future prediction (light crimson).  n = 3, standard deviation with 95% confidence interval.
 
+A)
+![](image/predict_test_sw.png)
+
+B)
+![](image/predict_future_spread_sw.png)
 
 
 Figure.  Time series plot of averaged monthly delayed departure time for Alaska Airlines.  (A) Representative test prediction (crimson).  (B) Future prediction (light crimson).  n = 3, standard deviation with 95% confidence interval.
 
-
-
-![](image/time_series_all_flights.png)
-
+A)
+![](image/predict_test_alaska.png)
 
 B)
+![](image/predict_future_spread_alaska.png)
 
-![](image/time_series_sw.png)
-
-
-C)
-
-![](image/time_series_alaska.png)
 
 
 ## Next Steps

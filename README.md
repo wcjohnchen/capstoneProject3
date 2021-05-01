@@ -48,7 +48,7 @@ C, D)
 
 
 
-Figure.  Delayed departure time.  (A) Type of delays.  (B) Time of a day.
+Figure 2.  Delayed departure time.  (A) Type of delays.  (B) Time of a day.
 
 A)
 
@@ -60,7 +60,7 @@ B)
 
 
 
-Figure.  Flight departure during the months between 2009 and 2018.  (A) Delayed and on-time departure.  (B) Delayed departure time.
+Figure 3.  Flight departure during the months between 2009 and 2018.  (A) Delayed and on-time departure.  (B) Delayed departure time.
 
 A)
 
@@ -72,7 +72,7 @@ B)
 
 
 
-Figure.  Flight departure for airline companies between 2009 and 2018.  (A) Total number of flights for each airline.  (B) Delayed and on-time departure.  (C) Delayed departure time.
+Figure 4.  Flight departure for airline companies between 2009 and 2018.  (A) Total number of flights for each airline.  (B) Delayed and on-time departure.  (C) Delayed departure time.
 
 A)
 
@@ -88,7 +88,7 @@ C)
 
 
 
-Figure.  Flight departure in US States/Districts/Territories between 2009 and 2018.  (A) Delayed and on-time departure.  (B) Delayed departure time.
+Figure 5.  Flight departure in US States/Districts/Territories between 2009 and 2018.  (A) Delayed and on-time departure.  (B) Delayed departure time.
 
 A)
 
@@ -100,7 +100,7 @@ B)
 
 
 
-Figure.  Correlation matrix of delayed flight departure information.
+Figure 6.  Correlation matrix of delayed flight departure information.
 
 ![](image/correlation_matrix.png)
 
@@ -108,11 +108,11 @@ Figure.  Correlation matrix of delayed flight departure information.
 
 ## LSTM Model
 
-Table.  A representative LSTM model summary.
+Table 1.  A representative LSTM model summary.
 
 ![](image/LSTM_model_summary.jpg)
 
-Figure.  A representative schematic of LSTM architecture.
+Figure 7.  A representative schematic of LSTM architecture.
 
 
 ![](image/schematic_LSTM_architecture.jpg)
@@ -121,7 +121,7 @@ Figure.  A representative schematic of LSTM architecture.
 
 ## Time Series
 
-Figure.  Time series plot of averaged monthly delayed departure time for all airlines.  (A) Representative test prediction (crimson).  (B) Future prediction (light crimson).  n = 3, standard deviation with 95% confidence interval.
+Figure 8.  Time series plot of averaged monthly delayed departure time for all airlines.  (A) Representative test prediction (crimson).  (B) Future prediction (light crimson).  n = 3, standard deviation with 95% confidence interval.
 
 A)
 ![](image/predict_test_all_flights.png)
@@ -130,7 +130,7 @@ B)
 ![](image/predict_future_spread_all_flights.png)
 
 
-Figure.  Time series plot of averaged monthly delayed departure time for Southwest Airlines.  (A) Representative test prediction (crimson).  (B) Future prediction (light crimson).  n = 3, standard deviation with 95% confidence interval.
+Figure 9.  Time series plot of averaged monthly delayed departure time for Southwest Airlines.  (A) Representative test prediction (crimson).  (B) Future prediction (light crimson).  n = 3, standard deviation with 95% confidence interval.
 
 A)
 ![](image/predict_test_sw.png)
@@ -139,7 +139,7 @@ B)
 ![](image/predict_future_spread_sw.png)
 
 
-Figure.  Time series plot of averaged monthly delayed departure time for Alaska Airlines.  (A) Representative test prediction (crimson).  (B) Future prediction (light crimson).  n = 3, standard deviation with 95% confidence interval.
+Figure 10.  Time series plot of averaged monthly delayed departure time for Alaska Airlines.  (A) Representative test prediction (crimson).  (B) Future prediction (light crimson).  n = 3, standard deviation with 95% confidence interval.
 
 A)
 ![](image/predict_test_alaska.png)

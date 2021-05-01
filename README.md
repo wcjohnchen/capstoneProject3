@@ -32,7 +32,7 @@ Air Traveling has been increasingly integrated into our daily life.  Like drivin
 The dataset contains total of 60+ million rows and 27 columns from 2009 to 2018.
 
 
-Figure 1.  Flight departure from 2009 to 2018.  (A) Delayed and on-time departure. (B) Delayed departure and arrival. (C) Averaged delayed time.
+Figure 1.  Flight departure from 2009 to 2018.  (A) Delayed and on-time departure. (B) Delayed departure and arrival. (C) Histogram of delayed time.  (D) Averaged delayed time.
 
 A)
 

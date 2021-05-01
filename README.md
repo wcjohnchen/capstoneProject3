@@ -22,7 +22,7 @@ Air Traveling has been increasingly integrated into our daily life.  Like drivin
 
 2. Modeling
 
-    Recurrent neural network.  LSTM models were implemnted using Tensorflow-Keras.  The representative summary of the neural network was shown on Table 1.  Models have different number of bidirectional layers and LSTM units.  Different optimizer learning rate and epochs were used to achieve best mean squared error (MSE) and mean absolute percentage error (MAPE).
+    Recurrent neural network.  LSTM models were implmented using Tensorflow-Keras.  The representative summary of the neural network was shown on Table 1.  Models have different number of bidirectional layers and LSTM units.  Different optimizer learning rate and epochs were used to achieve best mean squared error (MSE) and mean absolute percentage error (MAPE).
 
 3. Time Series
     The monthly dataset was split into train and test sets, 80:20.  A sliding window of previous 66 months were used to predict future 24 months.  Lag time = 1.
@@ -48,7 +48,7 @@ C, D)
 
 
 
-Figure 2.  Delayed departure time.  (A) Type of delays.  (B) Time of a day.
+Figure 2.  Delayed departure time.  (A) Type of delays.  NAS = National Aviation System.  (B) Time of a day.
 
 A)
 

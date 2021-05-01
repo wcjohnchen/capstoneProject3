@@ -28,7 +28,7 @@ Air Traveling has been increasingly integrated into our daily life.  Like drivin
 
 3. Time Series
 
-    The monthly dataset was split into train and test sets, 80:20.  A sliding window of previous 66 months were used to predict future 24 months.  Lag time = 1.
+    The averaged monthly dataset was split into train and test sets, 80:20.  A sliding window of previous 66 months were used to predict future 24 months.  Lag time = 1.  Mean absolute percentage error (MAPE) was calculated on test predictions.
 
 
 

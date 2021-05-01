@@ -108,7 +108,7 @@ Figure.  Correlation matrix of delayed flight departure information.
 
 ## LSTM Model
 
-Table.  A representative LSTM Model Summary.
+Table.  A representative LSTM model summary.
 
 ![](image/LSTM_model_summary.jpg)
 

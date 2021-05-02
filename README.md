@@ -13,9 +13,16 @@ Air Traveling has been increasingly integrated into our daily life.  Like drivin
 
 ## Methods
 
+Figure 1.  Project workflow.
+
+![](image/workflow.jpg)
+
+
 1. The Data
 
-    The data was published by the Bureau of Transportation Statistics of the US Department of Transporation, and is available at: https://www.kaggle.com/yuanyuwendymu/airline-delay-and-cancellation-data-2009-2018.  It contains US flight infromation from 2009 to 2018.
+    Data extraction.  The data was published by the Bureau of Transportation Statistics of the US Department of Transporation, and is available at: https://www.kaggle.com/yuanyuwendymu/airline-delay-and-cancellation-data-2009-2018.  It is a large dataset consisting of over 60+ millions rows and 28 columns for US flight infromation from 2009 to 2018.
+
+    Data cleaning and manipulation.  After careful evaulation, only revelant object and numerical type columns were kept.
 
 
 1. Exploratory Data Analysis
@@ -31,7 +38,7 @@ Air Traveling has been increasingly integrated into our daily life.  Like drivin
 
     ![](image/LSTM_model_summary.jpg)
 
-    Figure 1.  A representative schematic of LSTM architecture.
+    Figure 2.  A representative schematic of LSTM architecture.
 
     ![](image/schematic_LSTM_architecture.jpg)
 
@@ -44,7 +51,7 @@ Air Traveling has been increasingly integrated into our daily life.  Like drivin
 
 ## Exploratory Data Analysis
 
-Figure 2.  Flight departure from 2009 to 2018.  (A) Delayed and on-time departure. (B) Delayed departure and arrival. (C) Histogram of delayed time.  (D) Averaged delayed time.
+Figure 3.  Flight departure from 2009 to 2018.  (A) Delayed and on-time departure. (B) Delayed departure and arrival. (C) Histogram of delayed time.  (D) Averaged delayed time.
 
 A)
 
@@ -60,7 +67,7 @@ C, D)
 
 
 
-Figure 3.  Delayed departure time.  (A) Type of delays.  NAS = National Aviation System.  (B) Time of a day.
+Figure 4.  Delayed departure time.  (A) Type of delays.  NAS = National Aviation System.  (B) Time of a day.
 
 A)
 
@@ -72,7 +79,7 @@ B)
 
 
 
-Figure 4.  Flight departure during the months between 2009 and 2018.  (A) Delayed and on-time departure.  (B) Delayed departure time.
+Figure 5.  Flight departure during the months between 2009 and 2018.  (A) Delayed and on-time departure.  (B) Delayed departure time.
 
 A)
 
@@ -84,7 +91,7 @@ B)
 
 
 
-Figure 5.  Flight departure for airline companies between 2009 and 2018.  (A) Total number of flights for each airline.  (B) Delayed and on-time departure.  (C) Delayed departure time.
+Figure 6.  Flight departure for airline companies between 2009 and 2018.  (A) Total number of flights for each airline.  (B) Delayed and on-time departure.  (C) Delayed departure time.
 
 A)
 
@@ -100,7 +107,7 @@ C)
 
 
 
-Figure 6.  Flight departure in US States/Districts/Territories between 2009 and 2018.  (A) Delayed and on-time departure.  (B) Delayed departure time.
+Figure 7.  Flight departure in US States/Districts/Territories between 2009 and 2018.  (A) Delayed and on-time departure.  (B) Delayed departure time.
 
 A)
 
@@ -112,7 +119,7 @@ B)
 
 
 
-Figure 7.  Correlation matrix of delayed flight departure information.
+Figure 8.  Correlation matrix of delayed flight departure information.
 
 ![](image/correlation_matrix.png)
 
@@ -122,7 +129,7 @@ Figure 7.  Correlation matrix of delayed flight departure information.
 
 Time series forecast of flight time delays of indiviual airlines, in particularly Southwest and Alaska Airlines, and all airlines combined were examined.
 
-Figure 8.  Time series plot of averaged monthly delayed departure time for all airlines.  (A) A Representative test prediction (crimson).  (B) Future prediction (light crimson).  n = 3, standard deviation with 95% confidence interval.
+Figure 9.  Time series plot of averaged monthly delayed departure time for all airlines.  (A) A Representative test prediction (crimson).  (B) Future prediction (light crimson).  n = 3, standard deviation with 95% confidence interval.
 
 A)
 ![](image/predict_test_all_flights.png)
@@ -131,7 +138,7 @@ B)
 ![](image/predict_future_spread_all_flights.png)
 
 
-Figure 9.  Time series plot of averaged monthly delayed departure time for Southwest Airlines.  (A) A Representative test prediction (crimson).  (B) Future prediction (light crimson).  n = 3.
+Figure 10.  Time series plot of averaged monthly delayed departure time for Southwest Airlines.  (A) A Representative test prediction (crimson).  (B) Future prediction (light crimson).  n = 3.
 
 A)
 ![](image/predict_test_sw.png)
@@ -140,7 +147,7 @@ B)
 ![](image/predict_future_spread_sw.png)
 
 
-Figure 10.  Time series plot of averaged monthly delayed departure time for Alaska Airlines.  (A) A Representative test prediction (crimson).  (B) Future prediction (light crimson).  n = 3.
+Figure 11.  Time series plot of averaged monthly delayed departure time for Alaska Airlines.  (A) A Representative test prediction (crimson).  (B) Future prediction (light crimson).  n = 3.
 
 A)
 ![](image/predict_test_alaska.png)

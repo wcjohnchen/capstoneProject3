@@ -27,6 +27,14 @@ Air Traveling has been increasingly integrated into our daily life.  Like drivin
 
     Recurrent neural network.  LSTM models were implmented using Tensorflow-Keras.  The representative summary of the neural network was shown on Table 1.  Models have different number of bidirectional layers and LSTM units.  Different optimizer learning rate and epochs were adjusted.
 
+    Table 1.  A representative LSTM model summary.
+
+    ![](image/LSTM_model_summary.jpg)
+
+    Figure 1.  A representative schematic of LSTM architecture.
+
+    ![](image/schematic_LSTM_architecture.jpg)
+
 
 3. Time Series
 
@@ -36,7 +44,7 @@ Air Traveling has been increasingly integrated into our daily life.  Like drivin
 
 ## Exploratory Data Analysis
 
-Figure 1.  Flight departure from 2009 to 2018.  (A) Delayed and on-time departure. (B) Delayed departure and arrival. (C) Histogram of delayed time.  (D) Averaged delayed time.
+Figure 2.  Flight departure from 2009 to 2018.  (A) Delayed and on-time departure. (B) Delayed departure and arrival. (C) Histogram of delayed time.  (D) Averaged delayed time.
 
 A)
 
@@ -52,7 +60,7 @@ C, D)
 
 
 
-Figure 2.  Delayed departure time.  (A) Type of delays.  NAS = National Aviation System.  (B) Time of a day.
+Figure 3.  Delayed departure time.  (A) Type of delays.  NAS = National Aviation System.  (B) Time of a day.
 
 A)
 
@@ -64,7 +72,7 @@ B)
 
 
 
-Figure 3.  Flight departure during the months between 2009 and 2018.  (A) Delayed and on-time departure.  (B) Delayed departure time.
+Figure 4.  Flight departure during the months between 2009 and 2018.  (A) Delayed and on-time departure.  (B) Delayed departure time.
 
 A)
 
@@ -76,7 +84,7 @@ B)
 
 
 
-Figure 4.  Flight departure for airline companies between 2009 and 2018.  (A) Total number of flights for each airline.  (B) Delayed and on-time departure.  (C) Delayed departure time.
+Figure 5.  Flight departure for airline companies between 2009 and 2018.  (A) Total number of flights for each airline.  (B) Delayed and on-time departure.  (C) Delayed departure time.
 
 A)
 
@@ -92,7 +100,7 @@ C)
 
 
 
-Figure 5.  Flight departure in US States/Districts/Territories between 2009 and 2018.  (A) Delayed and on-time departure.  (B) Delayed departure time.
+Figure 6.  Flight departure in US States/Districts/Territories between 2009 and 2018.  (A) Delayed and on-time departure.  (B) Delayed departure time.
 
 A)
 
@@ -104,26 +112,13 @@ B)
 
 
 
-Figure 6.  Correlation matrix of delayed flight departure information.
+Figure 7.  Correlation matrix of delayed flight departure information.
 
 ![](image/correlation_matrix.png)
 
 
 
-## LSTM Model
-
-Table 1.  A representative LSTM model summary.
-
-![](image/LSTM_model_summary.jpg)
-
-Figure 7.  A representative schematic of LSTM architecture.
-
-
-![](image/schematic_LSTM_architecture.jpg)
-
-
-
-## Time Series
+## Time Series Forecasting
 
 Figure 8.  Time series plot of averaged monthly delayed departure time for all airlines.  (A) A Representative test prediction (crimson).  (B) Future prediction (light crimson).  n = 3, standard deviation with 95% confidence interval.
 

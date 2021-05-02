@@ -13,29 +13,28 @@ Air Traveling has been increasingly integrated into our daily life.  Like drivin
 
 ## Methods
 
+1. The Data
+
+    The data was published by the Bureau of Transportation Statistics of the US Department of Transporation, and is available at: https://www.kaggle.com/yuanyuwendymu/airline-delay-and-cancellation-data-2009-2018.  It contains total of 60+ million rows and 27 columns from 2009 to 2018.
+
+
 1. Exploratory Data Analysis
 
-    I. Extract data and identify features.
-
-    II. Clean and manipulate data
-
-    III. Plot distribution and determine correlations
+    Plot distribution and feature correlations.
     
 
 2. Modeling
 
     Recurrent neural network.  LSTM models were implmented using Tensorflow-Keras.  The representative summary of the neural network was shown on Table 1.  Models have different number of bidirectional layers and LSTM units.  Different optimizer learning rate and epochs were adjusted.
 
+
 3. Time Series
 
-    The averaged monthly dataset was split into train and test sets, 80:20.  A sliding window of previous 66 months were used to predict future 24 months.  Lag time = 1.  Mean absolute percentage error (MAPE) was calculated on test predictions.
+    The delayed departure time data was averaged monthly and split into train and test sets, 80:20.  A sliding window of previous 66 months were used to predict future 24 months.  Lag time = 1.  Mean absolute percentage error (MAPE) was calculated on test predictions.
 
 
 
 ## Exploratory Data Analysis
-
-Overview.  The dataset contains total of 60+ million rows and 27 columns from 2009 to 2018.
-
 
 Figure 1.  Flight departure from 2009 to 2018.  (A) Delayed and on-time departure. (B) Delayed departure and arrival. (C) Histogram of delayed time.  (D) Averaged delayed time.
 

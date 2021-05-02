@@ -5,9 +5,9 @@
 
 
 
-## Aim
+## Overview
 
-Air Traveling has been increasingly integrated into our daily life.  Like driving, it is essential to plan ahead and anticipate possible or imminent delays.  This study aims to predict future flight departure time delays using long short term memory (LSTM) neural network models.  The data was published by the Bureau of Transportation Statistics of the US Department of Transporation, and is available at: https://www.kaggle.com/yuanyuwendymu/airline-delay-and-cancellation-data-2009-2018.
+Air Traveling has been increasingly integrated into our daily life.  Like driving, it is essential to plan ahead and anticipate possible or imminent delays.  This study aims to predict future flight departure time delays using long short term memory (LSTM) neural network models.
 
 
 
@@ -159,7 +159,7 @@ Table 2.  Time series test prediction result (n = 3).
 
 
 
-## Future Directions
+## Summary
 LSTM nerual network models were built to predict flight departure time delay in this study.  The univariate models consist of multiple bidirectional LSTM layers and have an overall performance of MAPE ranging from 10.0 ± 0.1% to 11.5 ± 0.8% on time series test predictions.  Future directions may consider multivariate LSTM models and develop a web application for the flight departure delay information using FLASK.
 
 
@@ -173,4 +173,10 @@ LSTM nerual network models were built to predict flight departure time delay in 
 ## Acknowledgements
 
 I would like to thank L Belenky, S English, K Boerstler, and J Hall for their helpful discussion.
+
+
+
+## Sources
+
+The data was published by the Bureau of Transportation Statistics of the US Department of Transporation, and is available at: https://www.kaggle.com/yuanyuwendymu/airline-delay-and-cancellation-data-2009-2018.
 

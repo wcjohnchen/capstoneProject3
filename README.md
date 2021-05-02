@@ -18,32 +18,50 @@ Figure 1.  Project workflow.
 ![](image/workflow.jpg)
 
 
-1. The Data
+I. The Data
 
     Data extraction.  The data was published by the Bureau of Transportation Statistics of the US Department of Transporation, and is available at: https://www.kaggle.com/yuanyuwendymu/airline-delay-and-cancellation-data-2009-2018.  It is a large dataset consisting of over 60+ millions rows and 28 columns for US flight infromation from 2009 to 2018.
 
-    Data cleaning and manipulation.  After careful evaulation, only revelant object and numerical type columns were kept.
+    Data cleaning and preparation.  After careful consideration, only revelant object and numerical type columns were kept:
+    
+        1. FL_DATE (date of the flight)
+        2. OP_CARRIER (airline identifier)
+        3. ORIGIN (starting airport code)
+        4. DEST (destination airport code)
+        5. CRS_DEP_TIME (planned departure time)
+        6. DEP_DELAY (total delay time on departure)
+        6. ARR_DELAY (total delay time on arrival)
+        7. AIR_TIME (time duration between wheels off and on time)
+        8. DISTANCE (distance between two airports)
+        9. CARRIER_DELAY (delay caused by the airline)
+        10. WEATHER_DELAY (delay caused by the weather)
+        11. NAS_DELAY (delay casued by the national aviation system (NAS))
+        12. SECURITY_DELAY (delay caused by the security)
+        13. LATE_AIRCRAFT_DELAY (delay caused by the late incoming airplane)
+    
+    Missing values in the DEP_DELAY column are systemically removed.  Missing values in the CARRIER_DELAY, WEATHER_DELAY, NAS_DELAY, SECURITY_DELAY, and LATE_AIRCRAFT_DELAY columns are replaced with -1.  The month, day, and year in the FL_DATE were extracted into separate columns.  The airline codes in the OP_CARRIER are replaced with its airline name.  The codes in the ORGIN and DEST columns are replaced with its airport location name (US state, district, or territory name).  The time in the CRS_DEP_TIME column was categorized into morning (from 6am to 11:59am), afternoon (from 12pm to 4:59pm), evening (from 5pm to 7:59pm), and 'night' (from 8pm to 5:59am).  Data with total delay time on departure less than or equal 0 min was filtered out.
 
 
-1. Exploratory Data Analysis
+II. Exploratory Data Analysis
 
-    Plot distribution and feature correlations.
+    Data Exploration.  Investigate and summarize the dataset by generating bar graphs, boxplots, histograms, and pie charts.
     
 
-2. Modeling
+III. Modeling
 
     Recurrent neural network.  LSTM models were implmented using Tensorflow-Keras.  The representative summary of the neural network was shown on Table 1.  Models have different number of bidirectional layers and LSTM units.  Different optimizer learning rate and epochs were adjusted.
 
     Table 1.  A representative LSTM model summary.
 
-    ![](image/LSTM_model_summary.jpg)
+![](image/LSTM_model_summary.jpg)
 
     Figure 2.  A representative schematic of LSTM architecture.
 
-    ![](image/schematic_LSTM_architecture.jpg)
+![](image/schematic_LSTM_architecture.jpg)
 
+    Models were run on the Amazon EC2 instance (type: g4dn.2xlarge).
 
-3. Time Series
+IV. Time Series
 
     The delayed departure time data was averaged monthly and split into train and test sets, 80:20.  A sliding window of previous 66 months were used to predict future 24 months.  Lag time = 1.  Mean absolute percentage error (MAPE) was calculated on test predictions.
 

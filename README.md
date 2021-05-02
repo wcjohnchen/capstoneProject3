@@ -173,9 +173,3 @@ LSTM nerual network models were built to predict flight departure time delay in 
 
 I would like to thank L Belenky, S English, K Boerstler, and J Hall for their helpful discussion.
 
-
-
-## Sources
-
-The data was published by the Bureau of Transportation Statistics of the US Department of Transporation, and is available at: https://www.kaggle.com/yuanyuwendymu/airline-delay-and-cancellation-data-2009-2018.
-

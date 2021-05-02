@@ -24,42 +24,42 @@ Data extraction.  The data was published by the Bureau of Transportation Statist
 
 Data cleaning and preparation.  After careful consideration, only revelant object and numerical type columns were kept:
     
-    1. FL_DATE (date of the flight)
-    2. OP_CARRIER (airline identifier)
-    3. ORIGIN (starting airport code)
-    4. DEST (destination airport code)
-    5. CRS_DEP_TIME (planned departure time)
-    6. DEP_DELAY (total delay time on departure)
-    6. ARR_DELAY (total delay time on arrival)
-    7. AIR_TIME (time duration between wheels off and on time)
-    8. DISTANCE (distance between two airports)
-    9. CARRIER_DELAY (delay caused by the airline)
-    10. WEATHER_DELAY (delay caused by the weather)
-    11. NAS_DELAY (delay casued by the national aviation system (NAS))
-    12. SECURITY_DELAY (delay caused by the security)
-    13. LATE_AIRCRAFT_DELAY (delay caused by the late incoming airplane)
+  1. FL_DATE (date of the flight)
+  2. OP_CARRIER (airline identifier)
+  3. ORIGIN (starting airport code)
+  4. DEST (destination airport code)
+  5. CRS_DEP_TIME (planned departure time)
+  6. DEP_DELAY (total delay time on departure)
+  7. ARR_DELAY (total delay time on arrival)
+  8. AIR_TIME (time duration between wheels off and on time)
+  9. DISTANCE (distance between two airports)
+  10. CARRIER_DELAY (delay caused by the airline)
+  11. WEATHER_DELAY (delay caused by the weather)
+  12. NAS_DELAY (delay casued by the national aviation system (NAS))
+  13. SECURITY_DELAY (delay caused by the security)
+  14. LATE_AIRCRAFT_DELAY (delay caused by the late incoming airplane)
     
-Missing values in the DEP_DELAY column are systemically removed.  Missing values in the CARRIER_DELAY, WEATHER_DELAY, NAS_DELAY, SECURITY_DELAY, and LATE_AIRCRAFT_DELAY columns are replaced with -1.  The month, day, and year in the FL_DATE were extracted into separate columns.  The airline codes in the OP_CARRIER are replaced with its airline name.  The codes in the ORGIN and DEST columns are replaced with its airport location name (US state, district, or territory name).  The time in the CRS_DEP_TIME column was categorized into morning (from 6am to 11:59am), afternoon (from 12pm to 4:59pm), evening (from 5pm to 7:59pm), and 'night' (from 8pm to 5:59am).  Data with total delay time on departure less than or equal 0 min was filtered out.
+Missing values in the DEP_DELAY column are systemically removed.  Missing values in the CARRIER_DELAY, WEATHER_DELAY, NAS_DELAY, SECURITY_DELAY, and LATE_AIRCRAFT_DELAY columns are replaced with -1.  The month, day, and year in the FL_DATE were extracted into separate columns.  The airline codes in the OP_CARRIER are replaced with its airline name.  The codes in the ORGIN and DEST columns are replaced with its airport location name (US state, district, or territory name).  The time in the CRS_DEP_TIME column was categorized into morning (from 6am to 11:59am), afternoon (from 12pm to 4:59pm), evening (from 5pm to 7:59pm), and night (from 8pm to 5:59am.  Data with total delay time on departure less than or equal 0 min was filtered out.
 
 
 II. Exploratory Data Analysis
 
-    Data Exploration.  Investigate and summarize the dataset by generating bar graphs, boxplots, histograms, and pie charts.
+Data Exploration.  Investigate and summarize the dataset by generating bar graphs, boxplots, histograms, and pie charts.
     
 
 III. Modeling
 
-    Recurrent neural network.  LSTM models were implmented using Tensorflow-Keras.  The representative summary of the neural network was shown on Table 1.  Models have different number of bidirectional layers and LSTM units.  Different optimizer learning rate and epochs were adjusted.
+Recurrent neural network.  LSTM models were implmented using Tensorflow-Keras.  The representative summary of the neural network was shown on Table 1.  Models have different number of bidirectional layers and LSTM units.  Different optimizer learning rate and epochs were adjusted.  Models were run on the Amazon EC2 instance (type: g4dn.2xlarge).
 
-    Table 1.  A representative LSTM model summary.
+Table 1.  A representative LSTM model summary.
 
 ![](image/LSTM_model_summary.jpg)
 
-    Figure 2.  A representative schematic of LSTM architecture.
+Figure 2.  A representative schematic of LSTM architecture.
 
 ![](image/schematic_LSTM_architecture.jpg)
 
-    Models were run on the Amazon EC2 instance (type: g4dn.2xlarge).
+
 
 IV. Time Series
 

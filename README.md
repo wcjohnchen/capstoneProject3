@@ -120,6 +120,8 @@ Figure 7.  Correlation matrix of delayed flight departure information.
 
 ## Time Series Forecasting
 
+Time series of flight time delays of indiviual airlines, in particularly Southwest and Alaska Airlines, and all airlines combined were examined.  Southwest Airlines held the highest number of scheduled flights during 2009 - 2018, whereas Alaska Airlines was at the lower end.
+
 Figure 8.  Time series plot of averaged monthly delayed departure time for all airlines.  (A) A Representative test prediction (crimson).  (B) Future prediction (light crimson).  n = 3, standard deviation with 95% confidence interval.
 
 A)

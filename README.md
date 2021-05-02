@@ -39,7 +39,7 @@ Data cleaning and preparation.  After careful consideration, only revelant objec
   13. SECURITY_DELAY (delay caused by the security)
   14. LATE_AIRCRAFT_DELAY (delay caused by the late incoming airplane)
     
-Missing values in the DEP_DELAY column are systemically removed.  Missing values in the CARRIER_DELAY, WEATHER_DELAY, NAS_DELAY, SECURITY_DELAY, and LATE_AIRCRAFT_DELAY columns are replaced with -1.  The month, day, and year in the FL_DATE were extracted into separate columns.  The airline codes in the OP_CARRIER are replaced with its airline name.  The codes in the ORGIN and DEST columns are replaced with its airport location name (US state, district, or territory name).  The time in the CRS_DEP_TIME column was categorized into morning (from 6am to 11:59am), afternoon (from 12pm to 4:59pm), evening (from 5pm to 7:59pm), and night (from 8pm to 5:59am.  Data with total delay time on departure less than or equal 0 min was filtered out.
+Missing values in the DEP_DELAY column are systemically removed.  Missing values in the CARRIER_DELAY, WEATHER_DELAY, NAS_DELAY, SECURITY_DELAY, and LATE_AIRCRAFT_DELAY columns are replaced with -1.  The month, day, and year in the FL_DATE were extracted into separate columns.  The airline codes in the OP_CARRIER are replaced with its airline name.  The codes in the ORGIN and DEST columns are replaced with its airport location name (US state, district, or territory name).  The time in the CRS_DEP_TIME column was categorized into morning (from 6am to 11:59am), afternoon (from 12pm to 4:59pm), evening (from 5pm to 7:59pm), and night (from 8pm to 5:59am.  Data with total delay time on departure less than or equal 0 min was filtered out.  Outliers for delay departure time was kept, but not shown in the graphs.
 
 
 II. Exploratory Data Analysis
@@ -49,7 +49,7 @@ Data Exploration.  Investigate and summarize the dataset by generating bar graph
 
 III. Modeling
 
-Recurrent neural network.  LSTM models were implmented using Tensorflow-Keras.  The representative summary of the neural network was shown on Table 1.  Models have different number of bidirectional layers and LSTM units.  Different optimizer learning rate and epochs were adjusted.  Models were run on the Amazon EC2 instance (type: g4dn.2xlarge).
+Recurrent neural network.  LSTM models were implmented using Tensorflow-Keras.  The representative summary of the neural network and its architecure was shown on Table 1 and Figure 2, respectively.  Models have different number of bidirectional layers and LSTM units.  Different optimizer learning rate and epochs were adjusted.  Models were run on the Amazon EC2 instance (type: g4dn.2xlarge).
 
 Table 1.  A representative LSTM model summary.
 
@@ -63,11 +63,13 @@ Figure 2.  A representative schematic of LSTM architecture.
 
 IV. Time Series
 
-    The delayed departure time data was averaged monthly and split into train and test sets, 80:20.  A sliding window of previous 66 months were used to predict future 24 months.  Lag time = 1.  Mean absolute percentage error (MAPE) was calculated on test predictions.
+The delayed departure time data was averaged monthly and split into train and test sets, 80:20.  A sliding window of previous 66 months were used to predict future 24 months.  Lag time = 1.  Mean absolute percentage error (MAPE) was calculated on test predictions.
 
 
 
 ## Exploratory Data Analysis
+
+There were 36.8% of flights that departed late between 2009 and 2018.  And among those, 72.3% resulted in late arrival to their desintation (Fig. 3).  There were many causes of delays including carrier, weather, NAS, security, and late aircraft delays (Fig. 4a), and the time of a day (Fig. 4b).  Delay departure time may also be affected by the months of a year (Fig. 5), airline companies (Fig. 6), and aiport locations (Fig.7).  The correlation matrix shows a strong correlation between the departure delay and arrival delay, followed by carrier delay and late aircraft delay (Fig. 8).
 
 Figure 3.  Flight departure from 2009 to 2018.  (A) Delayed and on-time departure. (B) Delayed departure and arrival. (C) Histogram of delayed time.  (D) Averaged delayed time.
 

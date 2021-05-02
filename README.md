@@ -189,7 +189,7 @@ LSTM nerual network models were built to predict flight departure time delay in 
 
 ## Technologies
 
-![](image/technologies.jpg)
+![](image/logos.jpg)
 
 
 

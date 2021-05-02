@@ -15,7 +15,7 @@ Air Traveling has been increasingly integrated into our daily life.  Like drivin
 
 1. The Data
 
-    The data was published by the Bureau of Transportation Statistics of the US Department of Transporation, and is available at: https://www.kaggle.com/yuanyuwendymu/airline-delay-and-cancellation-data-2009-2018.  It contains US flight infromatoin from 2009 to 2018.
+    The data was published by the Bureau of Transportation Statistics of the US Department of Transporation, and is available at: https://www.kaggle.com/yuanyuwendymu/airline-delay-and-cancellation-data-2009-2018.  It contains US flight infromation from 2009 to 2018.
 
 
 1. Exploratory Data Analysis

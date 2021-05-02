@@ -147,7 +147,7 @@ Figure 8.  Correlation matrix of delayed flight departure information.
 
 ## Time Series Forecasting
 
-Time series forecast of flight time delays of indiviual airlines, in particularly Southwest and Alaska Airlines, and all airlines combined were examined.  It is based on the univariate LSTM models.  Southwest Airlines were selected because it has the highest number of flights between 2009 and 2018, whereas Alaska Airlines was among the lower end.
+Time series forecast of flight time delays of indiviual airlines, in particularly Southwest (Fig. 10) and Alaska Airlines (Fig. 11), and all airlines combined (Fig. 9) were examined.  It is based on the univariate LSTM models.  Southwest Airlines were selected because it has the highest number of flights between 2009 and 2018, whereas Alaska Airlines was among the lower ends.
 
 Figure 9.  Time series plot of averaged monthly delayed departure time for all airlines.  (A) A Representative test prediction (crimson).  (B) Future prediction (light crimson).  n = 3, standard deviation with 95% confidence interval.
 

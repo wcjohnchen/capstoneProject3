@@ -49,7 +49,7 @@ Data Exploration.  Investigate and summarize the dataset by generating bar graph
 
 III. Modeling
 
-Recurrent neural network.  LSTM models were implmented using Tensorflow-Keras.  The representative summary of the neural network and its architecure was shown on Table 1 and Figure 2, respectively.  Models have different number of bidirectional layers and LSTM units.  Different optimizer learning rate and epochs were adjusted.  Models were run on the Amazon EC2 instance (type: g4dn.2xlarge).
+Recurrent neural network.  LSTM models were implmented using Tensorflow-Keras.  The representative summary of the neural network and its architecure was shown on Table 1 and Figure 2, respectively.  Models have different number of bidirectional layers and LSTM units.  Different optimizer learning rate and epochs were adjusted.  Models were run on an Amazon EC2 instance (type: g4dn.2xlarge).
 
 Table 1.  A representative LSTM model summary.
 

@@ -1,4 +1,4 @@
-## Time Series Forecasting for Airline Flight Departure Delays Using Long Short Term Memory (LSTM) Neural Networks
+## Time Series Forecasting for Airline Flight Departure Delays Using Long Short Term Memory (LSTM) and Simple Recurrent Neural Networks (RNN)
 
 
 ![](image/airport.png)
@@ -7,7 +7,7 @@
 
 ## Overview
 
-Air Traveling has been increasingly integrated into our daily life.  Like driving, it is essential to plan ahead and anticipate possible or imminent delays.  This study aims to predict future flight departure time delays using long short term memory (LSTM) neural network models.
+Air Traveling has been increasingly integrated into our daily life.  Like driving, it is essential to plan ahead and anticipate possible or imminent delays.  This study aims to predict future flight departure time delays using long short term memory (LSTM) and simple recurrent neural network (RNN) models.
 
 
 
@@ -49,7 +49,7 @@ Data Exploration.  Investigate and summarize the dataset by generating bar graph
 
 III. Modeling
 
-Recurrent neural network.  LSTM models were implmented using Tensorflow-Keras.  The representative summary of the neural network and its architecure was shown on Table 1 and Figure 2, respectively.  Models have different number of bidirectional layers and LSTM units.  Different optimizer learning rate and epochs were adjusted.  Models were run on an Amazon EC2 instance (type: g4dn.2xlarge).
+Recurrent neural networks.  LSTM models were implmented using Tensorflow-Keras.  The representative summary of the neural network and its architecure was shown on Table 1 and Figure 2, respectively.  Models have different number of bidirectional layers and LSTM units.  Different optimizer learning rate and epochs were adjusted.  Models were run on an Amazon EC2 instance (type: g4dn.2xlarge).
 
 Table 1.  A representative LSTM model summary.
 

@@ -63,7 +63,7 @@ Figure 2.  A representative schematic of LSTM architecture.
 
 IV. Time Series
 
-The delay departure time data was averaged monthly and split into train and test sets, 80:20.  A sliding window of previous 66 months were used to predict future 24 months.  Lag time = 1.  Mean absolute percentage error (MAPE) was calculated for test predictions.
+The delay departure time data was averaged monthly and split into train and test sets, 80:20.  A sliding window of previous 66 months were used to predict future 24 months.  Mean absolute percentage error (MAPE) was calculated for test predictions.
 
 
 

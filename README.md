@@ -199,3 +199,23 @@ I would like to thank L Belenky, S English, K Boerstler, and J Hall for their he
 
 
 ![](image/air_travel.jpg)
+
+
+## Revision (Supplementary)
+
+This version is a simplified bidirectional univariate model with reduced layers and units that predicts the immediate month.  The model was built with a combination of a single LSTM layer followed by two simple RNN layers.  The data was standardized.  Overall, the model gives a lower mean absolute percentage error of 5.3059.
+
+Supplementary Figure 1.  Time series plot of averaged monthly delayed departure time for Southwest Airlines.  Train/test split: 80:20.  Look back (lag time) = 12.  Sliding window = 1.  red color = red prediction.  green color = test prediction.
+
+![](image/sw_revised.png)
+
+Train RMSE: 3.0692
+
+Test RMSE: 1.5232
+
+Test MAPE: 5.3059
+
+
+Supplementary Figure 2.  Graph of loss function of train and test sets.
+
+![](image/sw_mse.png)

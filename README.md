@@ -203,7 +203,7 @@ I would like to thank L Belenky, S English, K Boerstler, and J Hall for their he
 
 ## Revision (Supplementary)
 
-This version is a simplified bidirectional univariate model with reduced layers and units that predicts the immediate month.  The model was built with a combination of a single LSTM layer followed by two simple RNN layers.  The data was standardized.  Overall, the model gives a lower mean absolute percentage error of 5.3%.
+This version is a simplified bidirectional univariate model with reduced layers and units that predicts the immediate month.  The model was built with a combination of a single LSTM layer followed by two simple-RNN layers.  The data was standardized.  Overall, the model gives a lower mean absolute percentage error of 5.3%.
 
 Supplementary Figure 1.  Time series plot of averaged monthly delayed departure time for Southwest Airlines.  Train/test split: 80:20; look back (lag time) = 12; sliding window = 1; red color = train prediction; green color = test prediction.
 

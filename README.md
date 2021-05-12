@@ -205,7 +205,7 @@ I would like to thank L Belenky, S English, K Boerstler, and J Hall for their he
 
 This version is a simplified bidirectional univariate model with reduced layers and units that predicts the immediate month.  The model was built with a combination of a single LSTM layer followed by two simple-RNN layers.  The data was standardized.  Overall, the model gives a lower mean absolute percentage error of 5.6 ± 0.1% (n = 5) than the original version.
 
-Supplementary Figure 1.  Representative time series univariate plot of averaged monthly delayed departure time for Southwest Airlines.  Train/test split: 80:20; look back (lag time) = 12; sliding window = 1; red color = train prediction; green color = test prediction.
+Supplementary Figure 1.  Representative time series univariate plot of averaged monthly delayed departure time for Southwest Airlines.  Train/test split: 80:20; look back (lag time) = 12; sliding window step = 1; red color = train prediction; green color = test prediction.
 
 ![](image/sw_revised.png)
 
@@ -230,7 +230,7 @@ Test MAPE: 5.6 ± 0.1%
 A multivariate model was constructed.  The model architecture was the same as the new version of univariate model; however, with addition of CARRIER_DELAY and LATE_AIRCRAFT_DELAY features.  WEATHER_DELAY, NAS_DELAY, SECURITY_DELAY features were not included because addition of those features would cause an increase in MAPE.  Although neural network was unlikely to suffer multicollinearity (with the expense of overparameterization), ARR_DELAY feature, in any case, was also not included in the model.  The data was standardized.  Overall, the MAPE (4.9 ± 0.2% (n = 5)) of mulitvariate model is significantly lower than that of the univariate model. 
 
 
-Supplementary Figure 3.  Representative time series mulitvariate plot of averaged monthly delayed departure time for Southwest Airlines.  Train/test split: 80:20; look back (lag time) = 12; sliding window = 1; red color = train prediction; green color = test prediction.
+Supplementary Figure 3.  Representative time series mulitvariate plot of averaged monthly delayed departure time for Southwest Airlines.  Train/test split: 80:20; look back (lag time) = 12; sliding window step = 1; red color = train prediction; green color = test prediction.
 
 ![](image/plot_multivariate.png)
 

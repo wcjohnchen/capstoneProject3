@@ -251,6 +251,6 @@ Test RMSE: 1.540 ± 0.047
 Test MAPE: 4.9 ± 0.2%
 
 
-Supplementary Figure 5.  The MAPE of mulitvariate model is significantly lower (p-value = 0.00132) than that of the univariate model.  Test set.
+Supplementary Figure 5.  The MAPE of mulitvariate model is significantly lower (p-value = 0.00132) than that of the univariate model.  Test set. MAPE, %.
 
 ![](image/uni_vs_multi.png)

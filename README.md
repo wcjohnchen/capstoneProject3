@@ -7,7 +7,7 @@
 
 ## Overview
 
-Air Traveling has been increasingly integrated into our daily life.  Like driving, it is essential to plan ahead and anticipate possible or imminent delays.  This study aims to predict future flight departure time delays using long short term memory (LSTM) and simple recurrent neural network (RNN) models.
+Air Traveling has been increasingly integrated into our daily life.  Like driving, it is essential to plan ahead and anticipate possible or imminent delays.  This study aims to predict flight departure time delays using long short term memory (LSTM) and simple recurrent neural network (RNN) models.
 
 
 

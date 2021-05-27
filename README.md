@@ -158,7 +158,7 @@ B)
 ![](image/predict_future_spread_all_flights.png)
 
 
-**Figure 10**.  Time series plot of averaged monthly delayed departure time for theh Southwest Airlines.  (A) A Representative test prediction (crimson).  (B) Future prediction (light crimson).  n = 3.
+**Figure 10**.  Time series plot of averaged monthly delayed departure time for the Southwest Airlines.  (A) A Representative test prediction (crimson).  (B) Future prediction (light crimson).  n = 3.
 
 A)
 ![](image/predict_test_sw.png)

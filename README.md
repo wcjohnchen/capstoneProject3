@@ -158,7 +158,7 @@ B)
 ![](image/predict_future_spread_all_flights.png)
 
 
-**Figure 10**.  Time series plot of averaged monthly delayed departure time for Southwest Airlines.  (A) A Representative test prediction (crimson).  (B) Future prediction (light crimson).  n = 3.
+**Figure 10**.  Time series plot of averaged monthly delayed departure time for theh Southwest Airlines.  (A) A Representative test prediction (crimson).  (B) Future prediction (light crimson).  n = 3.
 
 A)
 ![](image/predict_test_sw.png)
@@ -167,7 +167,7 @@ B)
 ![](image/predict_future_spread_sw.png)
 
 
-**Figure 11**.  Time series plot of averaged monthly delayed departure time for Alaska Airlines.  (A) A Representative test prediction (crimson).  (B) Future prediction (light crimson).  n = 3.
+**Figure 11**.  Time series plot of averaged monthly delayed departure time for the Alaska Airlines.  (A) A Representative test prediction (crimson).  (B) Future prediction (light crimson).  n = 3.
 
 A)
 ![](image/predict_test_alaska.png)
@@ -230,7 +230,7 @@ Test MAPE: 5.6 ± 0.1%
 A multivariate model was constructed.  The model architecture was the same as the new version of univariate model; however, with addition of CARRIER_DELAY and LATE_AIRCRAFT_DELAY features.  WEATHER_DELAY, NAS_DELAY, and SECURITY_DELAY features were not included because addition of those features would cause an increase in MAPE.  The data was standardized.  Overall, MAPE (4.9 ± 0.2% (n = 5)) of the multivariate model is significantly lower than that of the univariate model; thus indicating that the multivariate model is the best performing model in this study.
 
 
-**Supplementary Figure 3**.  Representative time series mulitvariate plot of averaged monthly delayed departure time for Southwest Airlines.  Train/test split: 80:20; look back (lag time) = 12; sliding window step = 1; red color = train prediction; green color = test prediction.
+**Supplementary Figure 3**.  Representative time series mulitvariate plot of averaged monthly delayed departure time for the Southwest Airlines.  Train/test split: 80:20; look back (lag time) = 12; sliding window step = 1; red color = train prediction; green color = test prediction.
 
 ![](image/plot_multivariate.png)
 

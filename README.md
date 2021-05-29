@@ -183,7 +183,7 @@ B)
 
 
 ## Conclusion and Future Implementation
-LSTM nerual network models were built to predict flight departure time delay in this study.  The univariate models consist of multiple bidirectional LSTM layers and have an overall performance of MAPE ranging from 10.0 ± 0.1% to 11.5 ± 0.8% on time series test predictions.  Future directions may consider multivariate LSTM models and possibly develop a web application to access flight departure delay information.
+LSTM nerual network models were built to predict flight departure time delay in this study.  The univariate models consist of multiple bidirectional LSTM layers and have an overall performance of MAPE ranging from 10.0 ± 0.1% to 11.5 ± 0.8% on time series test predictions.  Future directions may consider further fine tuning and building multivariate LSTM models.
 
 
 
@@ -203,7 +203,7 @@ I would like to thank L Belenky, S English, K Boerstler, and J Hall for their he
 
 ## Addendum
 
-This version is a simplified bidirectional univariate model with reduced layers and units that predicts the immediate month.  The model was built with a combination of a single LSTM layer followed by two simple-RNN layers.  The data was standardized.  The model gives a lower mean absolute percentage error of 5.6 ± 0.1% (n = 5) than the original version.
+**Univatiate Model**.  This version is a simplified bidirectional univariate model with reduced layers and units that predicts the immediate month.  The model was built with a combination of a single LSTM layer followed by two simple-RNN layers.  The data was standardized.  The model gives a lower mean absolute percentage error of 5.6 ± 0.1% (n = 5) than the original version.
 
 **Supplementary Figure 1**.  Representative time series univariate plot of averaged monthly delayed departure time for Southwest Airlines.  Train/test split: 80:20; look back (lag time) = 12; sliding window step = 1; red color = train prediction; green color = test prediction.
 
@@ -227,7 +227,7 @@ Test MAPE: 5.6 ± 0.1%
 
 
 
-A multivariate model was constructed.  The model architecture was the same as the new version of univariate model; however, with addition of CARRIER_DELAY and LATE_AIRCRAFT_DELAY features.  WEATHER_DELAY, NAS_DELAY, and SECURITY_DELAY features were not included because addition of those features would cause an increase in MAPE.  The data was standardized.  Overall, MAPE (4.9 ± 0.2% (n = 5)) of the multivariate model is significantly lower than that of the univariate model; thus indicating that the multivariate model is the best performing model in this study.
+**Multivariate MOdel**.  This model architecture was the same as the new version of univariate model; however, with addition of two more features: CARRIER_DELAY and LATE_AIRCRAFT_DELAY features.  WEATHER_DELAY, NAS_DELAY, and SECURITY_DELAY features were not included because addition of those features were found to increase MAPE.  The data was standardized.  Overall, MAPE (4.9 ± 0.2% (n = 5)) of the multivariate model is significantly lower than that of the univariate model; thus indicating that the multivariate model is the best performing model in this study.
 
 
 **Supplementary Figure 3**.  Representative time series mulitvariate plot of averaged monthly delayed departure time for the Southwest Airlines.  Train/test split: 80:20; look back (lag time) = 12; sliding window step = 1; red color = train prediction; green color = test prediction.
@@ -251,6 +251,6 @@ Test RMSE: 1.540 ± 0.047
 **Test MAPE: 4.9 ± 0.2%**
 
 
-**Supplementary Figure 5**.  The MAPE of mulitvariate model is significantly lower (p-value = 0.00132) than that of the univariate model.  Test set. MAPE, %.
+**Supplementary Figure 5**.  The MAPE of the mulitvariate model is significantly lower (p-value = 0.00132) than that of the univariate model.  Test set. MAPE, %.
 
 ![](image/uni_vs_multi.png)

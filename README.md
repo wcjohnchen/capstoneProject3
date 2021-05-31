@@ -8,12 +8,19 @@
 ## Table of Contents
 
 I. Overview
+
 II. Methods
+
 III. Exploratory Data Analysis
+
 IV. Time Series Forecasting
+
 V. Conclusion and Future Implementation
+
 VI. Technologies
+
 VII. Acknowledgements
+
 VIII. Addendum
 
 

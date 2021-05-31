@@ -5,20 +5,32 @@
 
 
 
-## Overview
+## Table of Contents
+
+I. Overview
+II. Methods
+III. Exploratory Data Analysis
+IV. Time Series Forecasting
+V. Conclusion and Future Implementation
+VI. Technologies
+VII. Acknowledgements
+VIII. Addendum
+
+
+## I. Overview
 
 Air Traveling has been increasingly integrated into our daily life.  Like driving, it is essential to plan ahead and anticipate possible or imminent delays.  This study aims to predict flight departure time delays using long short term memory (LSTM) and simple recurrent neural network (RNN) models.
 
 
 
-## Methods
+## II. Methods
 
 **Figure 1**.  Project workflow.
 
 ![](image/workflow.jpg)
 
 
-**I. The Data**
+**1. The Data**
 
 Data extraction.  The data was published by the Bureau of Transportation Statistics of the US Department of Transporation, and is available at: https://www.kaggle.com/yuanyuwendymu/airline-delay-and-cancellation-data-2009-2018.  It is a large dataset consisting of over 60+ millions rows and 28 columns for US flight information from 2009 to 2018.
 
@@ -42,12 +54,12 @@ Data cleaning and preparation.  After careful consideration, only revelant objec
 Missing values in the DEP_DELAY column were systemically removed.  Missing values in the CARRIER_DELAY, WEATHER_DELAY, NAS_DELAY, SECURITY_DELAY, and LATE_AIRCRAFT_DELAY columns were replaced with -1.  The month, day, and year in the FL_DATE were extracted into separate columns.  The airline codes in the OP_CARRIER were replaced with its airline name.  The codes in the ORGIN and DEST columns were replaced with its airport location name (US state, district, or territory name).  The time in the CRS_DEP_TIME column was categorized into morning (from 6am to 11:59am), afternoon (from 12pm to 4:59pm), evening (from 5pm to 7:59pm), and night (from 8pm to 5:59am).  Data with total delay time on departure less than or equal 0 min was filtered out.  Outliers for delay departure time was kept, but not shown in the graphs.
 
 
-**II. Exploratory Data Analysis**
+**2. Exploratory Data Analysis**
 
 Data Exploration.  Investigate and summarize the dataset by generating bar graphs, boxplots, histograms, and pie charts.
     
 
-**III. Modeling**
+**3. Modeling**
 
 Recurrent neural networks.  LSTM models were implmented using Tensorflow-Keras.  The representative summary of the neural network and its architecure was shown on Table 1 and Figure 2, respectively.  Models have different number of bidirectional layers and LSTM units.  Different optimizer learning rate and epochs were adjusted.  Models were run on an Amazon EC2 instance (type: g4dn.2xlarge).
 
@@ -61,13 +73,13 @@ Recurrent neural networks.  LSTM models were implmented using Tensorflow-Keras. 
 
 
 
-**IV. Time Series**
+**4. Time Series**
 
 The delay departure time data was averaged monthly and split into train and test sets, 80:20.  A sliding window of previous 66 months were used to predict future 24 months.  Mean absolute percentage error (MAPE) was calculated for test predictions.
 
 
 
-## Exploratory Data Analysis
+## III. Exploratory Data Analysis
 
 There were 36.8% of flights that departed late between 2009 and 2018.  And among those, 72.3% resulted in late arrival to their desintation (Fig. 3).  There were many causes of delay including carrier, weather, NAS, security, and late aircraft delays (Fig. 4a), and the time of a day (Fig. 4b).  Delay departure time may also be affected by the months of a year (Fig. 5), airline companies (Fig. 6), and aiport locations (Fig. 7).  The correlation matrix shows a strong correlation between the departure delay and arrival delay, followed by carrier delay and late aircraft delay (Fig. 8).
 
@@ -145,7 +157,7 @@ B)
 
 
 
-## Time Series Forecasting
+## IV. Time Series Forecasting
 
 Time series forecast of flight time delays of indiviual airlines, in particularly Southwest (Fig. 10) and Alaska Airlines (Fig. 11), and all airlines combined (Fig. 9) were examined.  It is based on the univariate LSTM models.  Southwest Airlines were selected because it has the highest number of flights between 2009 and 2018, whereas Alaska Airlines was among the lower ends.  The averaged MAPE was determined for each airline (Table 2).
 
@@ -182,18 +194,19 @@ B)
 
 
 
-## Conclusion and Future Implementation
+## V. Conclusion and Future Implementation
+
 LSTM nerual network models were built to predict flight departure time delay in this study.  The univariate models consist of multiple bidirectional LSTM layers and have an overall performance of MAPE ranging from 10.0 ± 0.1% to 11.5 ± 0.8% on time series test predictions.  Future directions may consider further fine tuning and building multivariate LSTM models.
 
 
 
-## Technologies
+## VI. Technologies
 
 ![](image/logos.jpg)
 
 
 
-## Acknowledgements
+## VII. Acknowledgements
 
 I would like to thank L Belenky, S English, K Boerstler, and J Hall for their helpful discussion.  Thank you.
 
@@ -201,7 +214,7 @@ I would like to thank L Belenky, S English, K Boerstler, and J Hall for their he
 ![](image/air_travel.jpg)
 
 
-## Addendum
+## VIII. Addendum
 
 **Univatiate Model**.  This version is a simplified bidirectional univariate model with reduced layers and units that predicts the immediate month.  The model was built with a combination of a single LSTM layer followed by two simple-RNN layers.  The data was standardized.  The model gives a lower mean absolute percentage error of 5.6 ± 0.1% (n = 5) than the original version.
 

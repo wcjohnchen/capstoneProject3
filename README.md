@@ -247,7 +247,7 @@ Test MAPE: 5.6 ± 0.1%
 
 
 
-**Multivariate MOdel**.  This model architecture is the same as the new version of univariate model; however, with addition of two more features: CARRIER_DELAY and LATE_AIRCRAFT_DELAY features.  WEATHER_DELAY, NAS_DELAY, and SECURITY_DELAY features were not included because addition of those features were found to increase MAPE.  The data was standardized.  Overall, MAPE (4.9 ± 0.2% (n = 5)) of the multivariate model is significantly lower than that of the univariate model; thus indicating that the multivariate model is the best performing model in this study.
+**Multivariate Model**.  This model architecture is the same as the new version of univariate model; however, with addition of two more features: CARRIER_DELAY and LATE_AIRCRAFT_DELAY features.  WEATHER_DELAY, NAS_DELAY, and SECURITY_DELAY features were not included because addition of those features were found to increase MAPE.  The data was standardized.  Overall, MAPE (4.9 ± 0.2% (n = 5)) of the multivariate model is significantly lower than that of the univariate model; thus indicating that the multivariate model is the best performing model in this study.
 
 
 **Supplementary Figure 3**.  Representative time series mulitvariate plot of averaged monthly delayed departure time for the Southwest Airlines.  Train/test split: 80:20; look back (lag time) = 12; sliding window step = 1; red color = train prediction; green color = test prediction.
@@ -271,6 +271,6 @@ Test RMSE: 1.540 ± 0.047
 **Test MAPE: 4.9 ± 0.2%**
 
 
-**Supplementary Figure 5**.  The mulitvariate model had significantly lower MAPE (p-value = 0.00132) than that of the univariate model.  Test set. MAPE, %.
+**Supplementary Figure 5**.  The mulitvariate model had significantly lower MAPE (p-value = 0.00132) than that of the univariate model.  Test set. MAPE, %. n = 5.
 
 ![](image/uni_vs_multi.png)
